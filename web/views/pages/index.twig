@@ -1,0 +1,71 @@
+{% extends "layouts/panier.html" %} {% block content %}
+<!-- =================== HEADER ====================== -->
+{% include 'storeWidgets/headerLightUI/headerLightUI.twig' %}
+<!-- =================== END OF HEADER ====================== -->
+
+<div class="row ">
+
+
+
+    <!-- BREADCRUMB  - A COMMENTER POUR CONFIRMATION -->
+   <div class="col-md-12">
+        {% include 'storeWidgets/tunnelShopCartHeaderUI/tunnelShopCartHeaderUI.twig' %}
+    </div>
+    <!--  END OF BREADCRUMB  -->
+   
+
+   <!--  HERO  - A COMMENTER POUR TUNNEL & PANIER -->
+    {# <div class="col-md-12">
+        {% include 'storeWidgets/tunnelShopHero/tunnelShopHero.twig' %}
+    </div>#}
+    <!-- END OF HERO  -->
+
+
+</div>
+<div class="row">
+
+
+    <!-- POUR AFFICHER/MASQUER TUNNEL > COMMENTER  -->
+    {#
+    <div class="col-md-8 tunnelLivraisonTabUI__widget">
+        {% include 'storeWidgets/tunnelLivraisonTabUI/tunnelLivraisonTabUI.twig' %}
+    </div> #}
+    <!--  END OF TUNNEL  -->
+
+
+
+
+    <!-- POUR AFFICHER/MASQUER CONNEXION > COMMENTER  -->
+    
+     {#<div class="col-md-8 tunnelLivraisonTabUI__widget">
+        {% include 'storeWidgets/connexion/connexion.twig' %}
+    </div>#}
+    <!-- END OF TUNNEL -->
+
+
+
+    <!-- POUR AFFICHER/MASQUER CONFIRMATION DE/COMMENTER  -->
+   {# <div class="col-md-8 tunnelLivraisonTabUI__widget">
+        {% include 'storeWidgets/confirmationCommande/confirmationCommande.twig' %}
+    </div>#}
+    <!-- END OF TUNNEL  -->
+
+    <!--  RECAP PANIER  -->
+      {# <div class="col-md-4 tunnelRecapPanier__widget ">
+        {% include 'storeWidgets/tunnelRecapPanier/tunnelRecapPanier.twig' %}
+    </div>#}
+    <!-- END OF RECAP PANIER  -->
+
+    <!--  PANIER  -->
+   <div class="col-md-12 ">
+        {% include 'storeWidgets/panier/panier.twig' %}
+    </div>
+
+    <!-- FOOTER  -->
+    {% include 'storeWidgets/footer/footer.twig' %}
+    <!--  END OF FOOTER  -->
+
+
+
+</div>
+{% endblock %}

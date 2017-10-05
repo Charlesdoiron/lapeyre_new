@@ -1,0 +1,50 @@
+.fc-content-col {
+    border: 1px solid red;
+}
+
+.fc td,
+.fc th {
+    border-style: none;
+    border-width: 1px;
+    padding: 0;
+    vertical-align: top;
+}
+
+
+button.fc-prev-button.fc-button.fc-state-default.fc-corner-left.fc-corner-right,
+button.fc-next-button.fc-button.fc-state-default.fc-corner-left.fc-corner-right {
+    background-color: transparent !important;
+    border: 0 !important;
+    background-image: none !important;
+    box-shadow: none !important;
+}
+
+
+
+/*_________________*/
+
+.calendar__container {
+    text-align: center;
+    .cel__header {
+        margin-bottom: 10px;
+        border-bottom: 1px solid $brand-color;
+        border-width: 3px;
+        padding: 15px;
+    }
+}
+
+p.cell__hour {
+    padding: 10px;
+    color: #212121;
+    background-color: #f2f3f4;
+    margin-bottom: 5px !important;
+    text-align: center;
+}
+
+.cell__is-active{
+    padding: 10px !important;
+    color: #FFF !important;
+    background-color: $brand-color !important;
+    margin-bottom: 5px !important;
+    text-align: center;
+}

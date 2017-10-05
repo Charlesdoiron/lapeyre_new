@@ -1,0 +1,55 @@
+html {
+    color: $color-text;
+    font: 14px $font-sans;
+    height: 100%;
+}
+
+body {
+    font-family: $base-font;
+    height: 100%;
+}
+
+
+.page {
+    background-image: linear-gradient($color-grey-5 281px, white 281px);
+}
+
+.clear {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+p {
+    font-size: 13px;
+    font-family: $base-font;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+.inline{
+    display: inline;
+}
+
+.mb10{
+    margin-bottom: 10px !important;
+}
+.mb20{
+    margin-bottom: 20px !important;
+}
+.mt10{
+    margin-top: 10px !important;
+}
+.mt20{
+    margin-top: 20px !important;
+}
+
+.separator{
+    border-bottom: 1px solid $border-color;
+}
