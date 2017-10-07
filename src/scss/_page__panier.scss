@@ -5,8 +5,9 @@
 .panier__content {
     padding: 20px;
 }
-.panier__content > .panier__product ~ .panier__product{
-	margin-top: -2px;
+
+.panier__content>.panier__product~.panier__product {
+    margin-top: -2px;
 }
 
 .panier__product {
@@ -20,9 +21,9 @@
         color: #03c668;
         font-weight: 500;
     }
-    .text-orange{
-    	color:#f39f3d;
-    	font-weight: 500;
+    .text-orange {
+        color: #f39f3d;
+        font-weight: 500;
     }
     .panier__product__desc,
     {
@@ -66,6 +67,32 @@
         margin-bottom: 5px;
     }
     .panier__product__thumb {
-    padding: 0;
+        padding: 0;
+    }
 }
+
+.panier__code-avantage {
+    padding: 20px;
+    border: 5px solid #fbe5e7;
+    .btn {
+        padding: 8px 20px;
+        margin-left: -5px;
+    }
+}
+
+.panier__total__content {
+    p {
+        font-size: 18px;
+        font-weight: 100;
+    }
+    .small {
+        font-size: 13px;
+    }
+    span.custom-control-description {
+        font-size: 14px !important;
+        margin-left: 5px !important;
+    }
+    .separator{
+    	margin: 20px 0;
+    }
 }

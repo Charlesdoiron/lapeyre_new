@@ -12,6 +12,8 @@
     "load-grunt-tasks": "^3.5.2"
   },
   "dependencies": {
-    "grunt-contrib-concat": "^1.0.1"
+    "grunt-contrib-concat": "^1.0.1",
+    "slick": "^1.12.2",
+    "slick-carousel": "^1.8.1"
   }
 }
