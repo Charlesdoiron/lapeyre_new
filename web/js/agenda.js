@@ -1,54 +1,21 @@
 $(document).ready(function() {
 
-    $('.calendar').slick({
+    // DECLARATION DU CALENDAR
+    $('#calendar').slick({
         infinite: true,
         slidesToShow: 4,
-        slidesToScroll: 4
+        slidesToScroll: 4,
+        adaptiveHeight: true
     })
-
-
-    // 	var hours = $(".calendar__hour");
-
-    // 	$('.calendar__hour').addEventListener('click',function () {
-    // 		console.log(hello);
-    // 	})
-
-    // console.log(hours);
-
-
-    var hours = document.getElementsByClassName('calendar__hour');
-  
-    // for (var i = Things.length - 1; i >= 0; i--) {
-    // 	Things[i]
-    // }
-
-
-    $(hours).click(function() {
-
-
-        for (var i = hours.length - 1; i >= 0; i--) {
-            var hour = hours[i]
-                                 console.log(hour[i]);;
-
+    // AJOUT DE LA CLASS IS-ACTIVE AU CLICK
+    var hours = document.querySelectorAll('.calendar__hour');
+    var div = document.querySelectorAll('div');
+    for (var i = 0; i < hours.length; i++) {
+        var hour = hours[i]
+        var isActive = function() {
+            this.classList.toggle('hour-is-active')
         }
-
-    });
-
-
+        hour.addEventListener('click', isActive)
+    }
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// AJOUTER LA CLASSE ACTIVE A L'HEURE SELECTIONNEE

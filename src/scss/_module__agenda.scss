@@ -12,14 +12,28 @@
 }
 
 .calendar__hour {
+    border: 1px solid transparent !important;
     background-color: $bkg-light;
     padding: 5px;
     margin-bottom: 5px;
     font-size: 13px;
 }
+
 .calendar__hour:hover {
     background-color: $brand-color;
     color: #FFF;
+}
+
+
+
+.calendar__column {
+    width: 70% !important;
+}
+
+.is-unavailable {
+    border: 1px solid $bkg-light !important;
+    background-color: #FFF !important;
+    color: $bkg-light !important;
 }
 
 .hour-is-active {
@@ -27,12 +41,18 @@
     color: #FFF;
 }
 
-.calendar__column {
-    width: 50% !important;
+.slick-prev:before,
+.slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: 1;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-.is-unavailable {
-    border: 1px solid $bkg-light  !important;
-    background-color: #FFF !important;
-    color: $bkg-light !important;
+.slick-prev,
+.slick-next {
+    top: 12%;
 }

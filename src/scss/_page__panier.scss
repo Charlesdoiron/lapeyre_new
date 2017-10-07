@@ -1,5 +1,9 @@
 .panier__container {
     padding: 20px;
+    .cards img {
+        width: 40px;
+        margin-right: 5px;
+    }
 }
 
 .panier__content {
@@ -8,6 +12,11 @@
 
 .panier__content>.panier__product~.panier__product {
     margin-top: -2px;
+}
+.panier__select-shop{
+    width: 200px;
+    margin-bottom: 20px;
+    margin-left: 5px;
 }
 
 .panier__product {
@@ -72,7 +81,7 @@
 }
 
 .panier__code-avantage {
-    padding: 20px;
+    padding: 30px;
     border: 5px solid #fbe5e7;
     .btn {
         padding: 8px 20px;
@@ -92,7 +101,16 @@
         font-size: 14px !important;
         margin-left: 5px !important;
     }
-    .separator{
-    	margin: 20px 0;
+    .separator {
+        margin: 20px 0;
+    }
+}
+
+.panier__back {
+    position: relative;
+    bottom: 40px;
+    @media (max-width: 990px) {
+        bottom: 0;
+        text-align: center;
     }
 }
